@@ -1,67 +1,75 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Brian's Profile</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/jumbotron/">
+
     
-<!--Title-->
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Brian's Profile Page</title>
-    </head>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+  <body>
+    
 
-    <body>
-        <div class="container-fluid" style="background-color:pink" display="flex">
-        <h1>Brian Koppelmann's Profile Page</h1>
+<main role="main">
 
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div style="background-color:#A13535" class="jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-2">Brian's Profile Page</h1>
+      <p>Welcome to my Profile Page! There is a brief basic information section as well as a menu for accessing other content below.</p>
+    </div>
+  </div>
 
-<!--Basic Profile Information-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"><img src="C:\Code\CUS1172_2026\Milestone3\Photos3\Headshot.jpeg"width="80%"/></div>
+      <div class="col-md-3">
+        <h2>Basic Profile Information:</h2>
 
-<div class="row">
-    <div class="col-sm-8">
-        <div id="Basic Info">
-        <h3>Basic Profile Information:</h3>
-
-            <p1>Hello! My name is Brian Koppelmann, I am a Junior Computer Science student at <span style="color:red">St. Johns University</span>, I currently work at Round1 Bowling and Arcade, I have a dog and three sisters.</p1>
-            <img src="C:\Code\CUS1172_2026\Milestone1\Photos\Headshot.jpeg"width="25%"/>
-            </div>
-
-            </div>
-
-<!--Main Menu-->
-
-<div class="col-sm-4">
-    <div id="Menu">
-
-        <h2>Menu:</h2>
-
-        <table>
-            <tr>
-                <th>My Experience</th>
-                <th>About Me</th>
+            <p1>Hello! My name is Brian Koppelmann, I am a Junior Computer Science student at <span style="color:red">St. Johns University</span>, I currently work at Round1 Bowling and Arcade, I also have a dog and three sisters.</p1>
+            
+      </div>
+      
+      <div class="col-md-3">
+        <h3>Experience:</h3>
+  <tr>
             </tr>
             <tr>
-                <td><a href="#Education_Summary">Education Summary</a></td>
-                <td><a href="#General_Interests">General Interests</a></td>
+                <td><p><a class="btn btn-secondary" href="#Education_Summary" role="button">Education Summary &raquo;</a></p></td>
             </tr>
             <tr>
-                <td><a href="#Work_Experience">Work Experience</a></td>
-                <td><a href="#Favorite_Media">Favorite Media</a></td>
+                <td><p><a class="btn btn-secondary" href="#Work_Experience" role="button">Work Experience &raquo;</a></p></td>
             </tr>
             <tr>
-                <td><a href="#Programming_Skills">Programming Skills</a></td>
-                <td><a href="#Favorite_Website">Favorite Website</a></td>
+                <td><p><a class="btn btn-secondary" href="#Programming_Skills" role="button">Programming Skills &raquo;</a></p></td>
             </tr>
-            <tr><td><a href="#My_Projects">My Projects</a></td></tr>
+            <tr><td><p><a class="btn btn-secondary" href="#My_Projects" role="button">My Projects &raquo;</a></p></td></tr>
         </table>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
+      <div class="col-md-3">
+        <h3>About Me:</h3>
+  <tr>
+            </tr>
+            <tr>
+                <td><p> <a class="btn btn-secondary" href="#General_Interests" role="button">General Interests &raquo;</a></p></td>
+            </tr>
+            <tr>
+                <td><p> <a class="btn btn-secondary" href="#Favorite_Media" role="button">Favorite Media &raquo;</a></p></td>
+            </tr>
+            <tr>
+                <td><p> <a class="btn btn-secondary" href="#Favorite_Website" role="button">Favorite Website &raquo;</a></p></td>
+            </tr>
+        </table>
+      </div>
+    </div>
 
+    <hr>
 <!--Education Summary-->
 
         <div id="Education_Summary">
@@ -70,6 +78,7 @@
             <p1>I graduated from St. Dominic High School in 2023 and am on track to graduate from <span style="color:red">St. Johns University</span> in Spring of 2027</p1>
         </div>
 
+        <hr>
 <!--Work Experience-->
 
         <div id="Work_Experience">
@@ -82,6 +91,7 @@
             </ul>
             </div>
 
+            <hr>
 <!--Programming Skills-->           
 
             <div id="Programming_Skills">
@@ -97,35 +107,52 @@
             </ul>
             </div>
 
+            <hr>
 <!--General Interests-->
 
             <div id="General_Interests">
         <h3>General Interests</h3>
 
-            <p1>One of my favorite hobbies is building, rebuilding, and upgrading my PC. That is the reason that I hope to eventually get a job in the hardware sector of the tech industry.</p1>
+            <p1>One of my favorite hobbies is building, rebuilding, and upgrading my PC. That is the reason that I hope to eventually get a job in the hardware sector of the tech industry. I also love video games, my two favorites being Fallout: New Vegas, and Cyberpunk 2077</p1>
             </div>
 
+            <hr>
 <!--Favorite Movie, TV Show, and Song-->
 
             <div id="Favorite_Media">
-        <h3>Favorite Song, Movie, and TV Show:</h3>
+              <div class="container">
+                        <h3>Favorite Song, Movie, and TV Show:</h3>
+                <div class="row">
+                  <div class="col-md-4">
 
-        <p1>Favorite Song: Floral and Fading by Pierce the Veil</p1>
+
+        <p1>Favorite Song: Floral and Fading</p1>
             <p><video width="320" height="240" controls>
-             <source src="C:\Code\CUS1172_2026\Milestone1\Videos\Pierce The Veil - Floral & Fading (Official Music Video).mp4" type="video/mp4">
-          </video></p>
-
-          <p1>Favorite Movie: Bullet Train</p1>
-           <p><video width="320" height="240" controls>
-             <source src="C:\Code\CUS1172_2026\Milestone1\Videos\Bullet Train.mp4">
-          </video></p>
-
-          <p1>Favorite Show: Adventure Time</p1>
-           <p><video width="320" height="240" controls>
-             <source src="C:\Code\CUS1172_2026\Milestone1\Videos\Adventure Time.mp4" type="video/mp4">
+             <source src="C:\Code\CUS1172_2026\Milestone3\Videos3\Pierce The Veil - Floral & Fading (Official Music Video).mp4" type="video/mp4">
           </video></p>
           </div>
 
+          <div class="col-md-4">
+
+          <p1>Favorite Movie: Bullet Train</p1>
+           <p><video width="320" height="240" controls>
+             <source src="C:\Code\CUS1172_2026\Milestone3\Videos3\Bullet Train.mp4">
+          </video></p>
+
+          </div>
+          <div class="col-md-4">
+
+          <p1>Favorite Show: Adventure Time</p1>
+           <p><video width="320" height="240" controls>
+             <source src="C:\Code\CUS1172_2026\Milestone3\Videos3\Adventure Time.mp4" type="video/mp4">
+          </video></p>
+          </div>
+          </div>
+          </div>
+
+
+
+          <hr>
 <!--Favorite Website: Youtube-->
 
           <div id="Favorite_Website">
@@ -134,12 +161,26 @@
             <a href="https://www.youtube.com" target="_blank">Favorite Website: Youtube</a>
             </div>
 
+            <hr>
 <!--My Projects-->
 
             <div id="My_Projects">
          <h3>My Projects</h3>
-         <a href="file:///C:/Code/CUS1172_2026/Milestone1/Index1.html#Programming_Skills">Project One Milestone One</a>
+         <p><a href="file:///C:/Code/CUS1172_2026/Milestone3/index.html">Project One Milestone One</a></p>
+         <p><a href="file:///C:\Code\CUS1172_2026\Milestone3\index.html">Project One Milestone Three</a></p>
          </div>
 
-    </body>
+         <hr>
+  </div> <!-- /container -->
+
+</main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
 </html>
