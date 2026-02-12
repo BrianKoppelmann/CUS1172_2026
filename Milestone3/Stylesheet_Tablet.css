@@ -19,4 +19,7 @@ hr{
         -ms-user-select: none;
         user-select: none;
       }
+      .jumbotron{
+        background-color: #5A75E0;
+      }
 }
