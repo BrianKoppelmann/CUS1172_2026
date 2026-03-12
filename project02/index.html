@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List App</title>
+
+    <!--Bootstrapping-->
+
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        
+        <h1 class="text-center mb-4">Brian's To Do List</h1>
+
+        <!--Form Title Selector Thing-->
+
+        <form id="task-form">
+            <div class="mb-3">
+                <label for="task-title" class="form-label">Task Title</label>
+                <input type="text" id="task-title" class="form-control" required>
+            </div>
+
+            <!--Priority Selector Drop Down-->
+
+            <div class="mb-3">
+                <label for="task-priority" class="form-label">Priority</label>
+                <select id="task-priority" class="form-select">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <!--Pending and Completed Buttons-->
+
+            <div class="mb-3">
+                <label class="form-label">Status</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="status-pending" name="task-status" value="pending" class="form-check-input" checked>
+                    <label class="form-check-label" for="status-pending">Pending</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="status-completed" name="task-status" value="completed" class="form-check-input">
+                    <label class="form-check-label" for="status-completed">Completed</label>
+                </div>
+            </div>
+
+            <!--Submit Button-->
+
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+        <ul id="task-list" class="list-group mt-4">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
